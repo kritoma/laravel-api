@@ -4,9 +4,12 @@ import VueRouter from "vue-router";
 
 Vue.use(VueRouter);
 
-import Home from './pages/Home'
+import Home from './pages/Home';
+import About from './pages/About';
+import SinglePost from './pages/SinglePost';
+import Page404 from './pages/Page404';
 
-import Home from "./pages/Home";
+
 const router = new VueRouter({
     mode: "history",
     routes: [
@@ -15,6 +18,22 @@ const router = new VueRouter({
             name: "home",
             component: Home
         },
+        {
+            path: "/chi-siamo",
+            name: "about",
+            component: About
+        },
+        {
+            path: "/posts/:slug",
+            name: "single-post",
+            component: SinglePost
+        },
+        {
+            path: "/*",
+            name: "page404",
+            component: Page404
+        },
+        
     ]
 });
 

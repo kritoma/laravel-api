@@ -1,13 +1,12 @@
 <template>
- <main>
-    <router-view></router-view>
- </main>
+  <div class="container">
+    <h2>Page 404</h2>
+  </div>
 </template>
 
 <script>
-
 export default {
-    name: 'BaseMain'
+    name: 'Page404'
 }
 </script>
 

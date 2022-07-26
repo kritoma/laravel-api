@@ -1,6 +1,8 @@
 <template>
   <footer>
-    ciao
+    <div class="container">
+      <div class="text-center">Made in BoolBlog</div>
+    </div>
   </footer>
 </template>
 
